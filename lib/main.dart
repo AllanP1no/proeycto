@@ -89,22 +89,22 @@ class StatePaginaPrincipal extends State<PaginaPrincipal> {
                 runSpacing: 20,
                 alignment: WrapAlignment.center,
                 children: [
-                  _construirBotonDeAccion(
+                  BotonDeAccion(
                     icono: Icons.add,
                     color: const Color.fromARGB(255, 141, 4, 171),
                     onPressed: aumentar,
                   ),
-                  _construirBotonDeAccion(
+                  BotonDeAccion(
                     icono: Icons.remove,
                     color: const Color.fromARGB(255, 10, 138, 1),
                     onPressed: disminuir,
                   ),
-                  _construirBotonDeAccion(
+                  BotonDeAccion(
                     icono: Icons.close,
                     color: Colors.orange,
                     onPressed: multiplicar,
                   ),
-                  _construirBotonDeAccion(
+                  BotonDeAccion(
                     icono: Icons.percent,
                     color: Colors.teal,
                     onPressed: dividir,
@@ -118,7 +118,7 @@ class StatePaginaPrincipal extends State<PaginaPrincipal> {
     );
   }
 
-  Widget _construirBotonDeAccion({
+  Widget BotonDeAccion({
     required IconData icono,
     required Color color,
     required VoidCallback onPressed,
